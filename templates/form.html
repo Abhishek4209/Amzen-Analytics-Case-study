@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription Refill Form</title>
+    <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="date"],
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Prescription Refill Form</h2>
+        <form action="submit" method="POST">
+            <div class="form-group">
+                <label for="patId">Patient ID:</label>
+                <input type="text" id="patId" name="patId" placeholder="Enter Patient ID" required>
+            </div>
+            <div class="form-group">
+                <label for="copayAmount">Copay Amount:</label>
+                <input type="text" id="copayAmount" name="copayAmount" placeholder="Enter Copay Amount" required>
+            </div>
+            <div class="form-group">
+                <label for="refillDate">Refill Date:</label>
+                <input type="date" id="refillDate" name="refillDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Optin">Optin:</label>
+                <select id="optIn" name="optIn" required>
+                    <option value="">Select Card Status</option>
+                    <option value="Y">Y</option>
+                    <option value="N">N</option>
+                </select>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="form-group">
+                <label for="cardStatus">Card Status:</label>
+                <select id="cardStatus" name="cardStatus" required>
+                    <option value="">Select Card Status</option>
+                    <option value="Active">Active</option>
+                    <option value="Expired">Expired</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="channel">Channel:</label>
+                <!-- <input type="text" id="channel" name="channel" placeholder="Enter Channel" required> -->
+                <select id="channel" name="channel" required>
+                    <option value="">Channel:</option>
+                    <option value="Virtual">Virtual</option>
+                    <option value="Retail">Expired</option>
+                </select>
+
+
+
+
+
+            </div>
+            <div class="form-group">
+                <label for="nextRefillDate">Next Refill Date:</label>
+                <input type="date" id="nextRefillDate" name="nextRefillDate" required>
+            </div>
+            <div class="form-group">
+                <label for="cardNo">Card Number:</label>
+                <input type="text" id="cardNo" name="cardNo" placeholder="Enter Card Number" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+</form>
+<h2>
+
+</h2>
+<body>
+</html>
+
+
+</body>
+
+</html>
