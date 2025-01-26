@@ -1,4 +1,4 @@
-# **HFCL CASE STUDY**
+# **Amazen CASE STUDY**
 
 
 ## **Current scenario:-**
